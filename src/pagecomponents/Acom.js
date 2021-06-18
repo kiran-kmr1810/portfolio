@@ -5,9 +5,9 @@ import coding from "../icons/code.svg"
 function Acom() {
     return (
         <div>
-            <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="86.3vh" bg="#1f1f1e">
+            <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="100vh" overflow="auto" bg="#1f1f1e">
             <Stack>
-            <Box px="330px" paddingTop="30px" paddingBottom="10px">
+            <Box px="330px" paddingTop="15px" paddingBottom="5px">
             <img alt = "profile" style={{height:'250px',width:'250px'}} src={coding}/>
             </Box>
             <Box px="150px">
@@ -17,7 +17,7 @@ function Acom() {
                  an entry level position to gain knowledge and extensive experience 
                  in areas of software development , machine learning and related areas."</Text>
             </Box>
-            <Box px="330px" paddingTop="50px">
+            <Box px="330px" paddingTop="30px">
             <Link href="https://drive.google.com/file/d/1EIuwwdwJr_2eLPhF-jOtF99aFJh852kR/view?usp=sharing" isExternal>
             <Button px="75px" 
             bg = "#017acd"

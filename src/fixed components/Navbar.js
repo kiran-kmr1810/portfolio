@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box,HStack,Text } from "@chakra-ui/react"
+import { Box,HStack,Text} from "@chakra-ui/react"
 import icovs from "../icons/icovs.svg";
 import { useMediaQuery } from 'react-responsive'
  
@@ -24,8 +24,6 @@ function Navbar() {
                 </HStack>
                 {lap &&<Text 
                 fontSize="14" color="gray.200"> Kiran Kumar A - Portfolio Website</Text>}
-                {mobile && <Text 
-                fontSize="12" px="40px" color="gray.200"> Kiran Kumar A - Portfolio</Text>}
             </HStack>
         </Box>
       </div>

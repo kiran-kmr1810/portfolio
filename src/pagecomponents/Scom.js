@@ -4,7 +4,7 @@ import { Box, Center,Stack,Text} from "@chakra-ui/react"
 function Scom() {
     return (
         <div>
-        <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="86.3vh" bg="#1f1f1e">
+        <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="100vh" overflow="auto" bg="#1f1f1e">
             <Stack>
                 <Box py="40px" px="350px">
                 <Text fontWeight="bold" fontSize="35" color="gray.100">

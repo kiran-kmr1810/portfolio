@@ -4,9 +4,9 @@ import {Box,Link,Stack,Text} from "@chakra-ui/react"
 function Pcom() {
     return (
         <div>
-        <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="86.3vh" bg="#1f1f1e">
+        <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="100vh" overflow="auto" bg="#1f1f1e">
         <Stack>
-                <Box paddingTop="20px" paddingBottom="40px"  px="350px">
+                <Box paddingTop="10px" paddingBottom="25px"  px="350px">
                 <Text fontWeight="bold" fontSize="35" color="gray.100">
                     PROJECTS
                 </Text>

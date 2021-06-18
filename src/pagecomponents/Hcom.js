@@ -5,7 +5,7 @@ import profile from "../icons/profile.png"
 function Hcom() {
     return (
         <div>
-            <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="86.3vh" bg="#1f1f1e">
+            <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="100vh" overflow="auto" bg="#1f1f1e">
                 <HStack spacing="50px">
                 <Box p="50px" paddingLeft="100px">
                     <img 
