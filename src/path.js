@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { BrowserRouter as Router , Switch , Route} from 'react-router-dom';
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -7,6 +7,9 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 
 function Path() {
+    useEffect(() => {
+        document.title = "Kirankumar"
+      }, [])
     return (
         <div>
         <Router> 
