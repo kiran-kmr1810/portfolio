@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./fixed components/Navbar";
+import Footbar from "./fixed components/Footbar";
+import Sidebar from "./fixed components/Sidebar";
+import { useMediaQuery } from 'react-responsive'
+import Explorebar from "./fixed components/Explorebar";
+import Filebarpc from "./fixed components/Filebarpc";
+import Sidebarmob from "./fixed components/Sidebarmob";
+import Home from "./pages/Home"
 
 function App() {
+      const lap = useMediaQuery({query: '(min-device-width: 930px)'})
+      const mob = useMediaQuery({ query: '(max-device-width: 929px)' })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      {lap && <Sidebar/> }
+      {mob && <Sidebarmob/> }
+      {lap && <Explorebar/> }
+      {lap && <Filebarpc/> }
+      {lap && <Home/>}
+      <Footbar/>
     </div>
   );
 }
