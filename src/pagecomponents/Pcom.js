@@ -5,7 +5,7 @@ function Pcom() {
     return (
         <div>
         <Box pos="fixed" left="300px" top="64px" bottom="25px" w="100%" h="100vh" overflow="auto" bg="#1f1f1e">
-        <Stack>
+        <Stack spacing="40px">
                 <Box paddingTop="10px" paddingBottom="25px"  px="350px">
                 <Text fontWeight="bold" fontSize="35" color="gray.100">
                     PROJECTS
@@ -46,7 +46,7 @@ function Pcom() {
                 </Box>
             </Box>
 
-            <Box>
+            <Box paddingBottom="200px">
             <Box bg="gray.700" maxH="230px" maxW="550px" p={4} display={{ md: "flex" }}>
                 <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }} paddingRight="150px">
                     <Text
@@ -65,7 +65,7 @@ function Pcom() {
                     fontSize="lg"
                     lineHeight="normal"
                     fontWeight="semibold"
-                    href="https://github.com/kiran-kmr1810/"
+                    href="https://drive.google.com/file/d/1GK9dlgYfVnCo-Pjzs2wvYwyfZArU0ZZC/view?usp=sharing"
                     >
                     SURWAY — A UAV route planner
                     </Link>
