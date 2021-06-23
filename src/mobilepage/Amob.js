@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Stack,Text,Button,Link,Center} from "@chakra-ui/react"
+import {Box,Stack,Text,Button,Link,Center,HStack} from "@chakra-ui/react"
 import coding from "../icons/code.svg"
 
 function Amob() {
@@ -19,8 +19,22 @@ function Amob() {
                  in areas of software development , machine learning and related areas."</Text>
             </Box>
             <Box paddingTop="50px">
+            <HStack spacing="5px">
             <Link href="https://drive.google.com/file/d/1EIuwwdwJr_2eLPhF-jOtF99aFJh852kR/view?usp=sharing" isExternal>
-            <Button px="75px" 
+            <Button 
+            w = "100px" 
+            bg = "#017acd"
+            color = "white"
+            _hover={{
+                bg:"white",
+                color:"#017acd"
+            }}>
+                VIEW CV
+            </Button>
+            </Link>
+            <Link href="https://drive.google.com/uc?id=1EIuwwdwJr_2eLPhF-jOtF99aFJh852kR&export=download">
+            <Button 
+            w= "130px"
             bg = "#017acd"
             color = "white"
             _hover={{
@@ -30,6 +44,7 @@ function Amob() {
                 DOWNLOAD CV
             </Button>
             </Link>
+            </HStack>
             </Box>
             </Stack>
         </Center>

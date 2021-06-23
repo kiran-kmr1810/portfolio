@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text,Stack, Button,Link} from "@chakra-ui/react"
+import { Box, Text,Stack, Button,Link,HStack} from "@chakra-ui/react"
 import coding from "../icons/code.svg"
 
 function Acom() {
@@ -17,9 +17,22 @@ function Acom() {
                  an entry level position to gain knowledge and extensive experience 
                  in areas of software development , machine learning and related areas."</Text>
             </Box>
-            <Box px="330px" paddingTop="30px">
+            <Box px = "310px" paddingTop="30px">
+            <HStack spacing="15px">
             <Link href="https://drive.google.com/file/d/1EIuwwdwJr_2eLPhF-jOtF99aFJh852kR/view?usp=sharing" isExternal>
-            <Button px="75px" 
+            <Button px="30px" 
+            py="10px"
+            bg = "#017acd"
+            color = "white"
+            _hover={{
+                bg:"white",
+                color:"#017acd"
+            }}>
+                VIEW CV
+            </Button>
+            </Link>
+            <Link href="https://drive.google.com/uc?id=1EIuwwdwJr_2eLPhF-jOtF99aFJh852kR&export=download">
+            <Button px="25px" 
             bg = "#017acd"
             color = "white"
             _hover={{
@@ -29,6 +42,7 @@ function Acom() {
                 DOWNLOAD CV
             </Button>
             </Link>
+            </HStack>
             </Box>
             </Stack>
             </Box>
